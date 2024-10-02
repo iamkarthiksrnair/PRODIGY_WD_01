@@ -1,8 +1,10 @@
-window.onscroll = function() {
-    const navbar = document.getElementById("navbar");
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        navbar.classList.add("scrolled");
+// script.js
+
+window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
     } else {
-        navbar.classList.remove("scrolled");
+        navbar.classList.remove('scrolled');
     }
-};
+});

@@ -1,41 +1,44 @@
+/* styles.css */
+
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-nav {
+.navbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    background-color: #333;
-    color: white;
-    transition: background-color 0.3s ease;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
     z-index: 1000;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.nav-links {
+    list-style: none;
+    padding: 10px;
     margin: 0;
     display: flex;
     justify-content: space-around;
 }
 
-nav ul li {
-    padding: 15px 20px;
-}
-
-nav ul li a {
-    color: white;
+.nav-links li a {
     text-decoration: none;
-    transition: color 0.3s ease;
+    color: white;
+    padding: 10px 20px;
+    transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #ffcc00; /* Change the color on hover */
+.nav-links li a:hover {
+    color: #ffcc00; /* Hover color */
 }
 
 .scrolled {
-    background-color: #444; /* Background color when scrolled */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background when scrolled */
+    color: white;
+}
+
+.content {
+    padding: 60px 20px; /* Add padding to avoid content being hidden under fixed navbar */
 }
